@@ -1,0 +1,66 @@
+export const tradeZones = [
+  {
+    id: "zone-aldrich",
+    name: "Aldrich Park",
+    description: "Open green space — meet near the ring road benches.",
+    lat: 33.6461,
+    lng: -117.8426,
+    indoor: false,
+    hours: "Daylight hours recommended",
+    hasCameras: true,
+  },
+  {
+    id: "zone-sc",
+    name: "Student Center",
+    description: "Indoor tables by the food court — always busy.",
+    lat: 33.648,
+    lng: -117.842,
+    indoor: true,
+    hours: "Mon–Fri 7am–11pm",
+    hasCameras: true,
+  },
+  {
+    id: "zone-langson",
+    name: "Langson Library Entrance",
+    description: "Covered plaza — easy landmark, high foot traffic.",
+    lat: 33.6472,
+    lng: -117.841,
+    indoor: false,
+    hours: "Library hours vary",
+    hasCameras: true,
+  },
+  {
+    id: "zone-arc",
+    name: "ARC Lobby",
+    description: "Athletics & rec lobby — very visible.",
+    lat: 33.6435,
+    lng: -117.832,
+    indoor: true,
+    hours: "Daily 6am–12am",
+    hasCameras: true,
+  },
+  {
+    id: "zone-alp",
+    name: "Anteater Learning Pavilion",
+    description: "Study commons near Ring Mall.",
+    lat: 33.6445,
+    lng: -117.8405,
+    indoor: true,
+    hours: "Open late during midterms",
+    hasCameras: true,
+  },
+  {
+    id: "zone-mesa",
+    name: "Mesa Court Commons",
+    description: "Outside the dining hall — great for dorm pickups.",
+    lat: 33.6423,
+    lng: -117.8382,
+    indoor: false,
+    hours: "Daylight hours",
+    hasCameras: true,
+  },
+];
+
+export function zoneById(id) {
+  return tradeZones.find((z) => z.id === id) ?? null;
+}
